@@ -37,9 +37,13 @@ class Requester(object):
     def do_requests(request_list: List[requests.Request], opts: RequestOptions = None):
         """
         Execute the request list and return the list of responses for each request
-        :param request_list:
-        :param opts:
-        :return:
+        
+        :param request_list: The list of requests to be executed.
+                             i.e: [requests.Request("GET",url="https://google.com")]
+        :param opts: The request options (timeouts, etc).
+        :return: Returns the response list in an orderly manner.
+                 That is, the answer in index n will be in the answer array in position n.
+        :see: doc/diagram.png
         """
         if opts is None:
             opts = RequestOptions()
