@@ -2,6 +2,10 @@ It allows multiple requests to be made asynchronously.
 
 This can be done.
 
+```bash
+pip3 install python-request-fanout
+```
+
 ###Example:
  
 ```python

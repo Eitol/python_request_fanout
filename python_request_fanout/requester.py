@@ -32,7 +32,7 @@ class Requester(object):
         return response, id_
     
     @staticmethod
-    def do_requests(request_list: List[requests.Request], opts: RequestOptions = None):
+    def do_requests(request_list: List[requests.Request], opts: RequestOptions = None) -> List[requests.Response]:
         """
         Execute the request list and return the list of responses for each request
         
