@@ -1,11 +1,9 @@
 import enum
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from time import sleep, time
-from typing import Callable, Dict, Any, List
+from typing import List
 
 import requests
 from requests import Session
-from requests.auth import HTTPBasicAuth
 
 _DEFAULT_NUM_OF_WORKERS = 1
 _DEFAULT_TIMEOUT_SECONDS = 15
