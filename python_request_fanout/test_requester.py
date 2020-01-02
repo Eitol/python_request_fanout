@@ -1,10 +1,9 @@
 from typing import List
-from unittest import TestCase
 
 import pytest
 import requests
 
-from requester import HTTPMethod, Requester
+from python_request_fanout.requester import HTTPMethod, Requester
 
 request_list_1 = [
     requests.Request(
