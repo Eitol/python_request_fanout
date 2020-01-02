@@ -1,13 +1,21 @@
 It allows multiple requests to be made asynchronously.
 
+#### install
+
+```bash
+pip3 install  python-request-fanout requests
+```
+
+
 This can be done.
+
 
 ###Example:
  
 ```python
 import requests
-
 from python_request_fanout.requester import HTTPMethod, Requester
+
 request_array = [
     requests.Request(
         HTTPMethod.GET.name,
